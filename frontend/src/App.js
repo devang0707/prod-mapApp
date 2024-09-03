@@ -162,7 +162,7 @@ function App() {
       <Popup key={p._id} longitude={p.longitude} latitude={p.latitude} onClose={()=>{setCurrentLocationId(null);setSelectedUser(null)}}
         anchor="right" 
         >
-        <div className='container p-[10px] '>
+        <div className='container border-[1px] border-black p-[10px] '>
           <label>Place</label>
           <h4 className='location'>{p.title}</h4>
           <label>Review</label>

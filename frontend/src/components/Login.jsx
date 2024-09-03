@@ -54,7 +54,7 @@ const Login = ({setShouldShowLogin,myStorage,setCurrentUser,setShouldShowRegiste
           <form onSubmit={submit} className={styles.form}>
             <input ref={nameRef} className={styles.inputBox} type='text' placeholder='username' />
             <input ref={passwordRef} className={styles.inputBox} type='password' placeholder='password' />
-            <button className={styles.button}>Login</button>
+            <button className={styles.button}>LOGIN</button>
             {error && <span className='text-[10px] text-red-500 '>Incorrect Username or Password</span>}
           </form>
           <div onClick={handleLoginClose} className={styles.closeButton}>x</div>      

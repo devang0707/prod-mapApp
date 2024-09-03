@@ -55,7 +55,7 @@ const Register = ({setShouldShowRegister,myStorage,setCurrentUser}) => {
             <input ref={nameRef} className={styles.inputBox} type='text' placeholder='username'></input>
             <input ref={emailRef} className={styles.inputBox} type='email' placeholder='email'></input>
             <input ref={passwordRef} className={styles.inputBox} type='password' placeholder='password'></input>
-            <button className={styles.button}>Register</button>
+            <button className={styles.button}>REGISTER</button>
             {success && <span className='text-[12px] text-green-500 '>Successfully Registered</span>}            
             {error && <span className='text-[12px] text-red-500 '>Something's Wrong!</span>}
           </form>

@@ -6,7 +6,7 @@ const UserGuide = () => {
   return (
     <div className={styles.userGuideDiv}>
 
-      <h1 className='font-bold'>Tap map to add your Pin</h1>
+      <h1 className='font-bold'>Tap on map to add your Pin</h1>
 
       <div className='flex gap-[10px] '>
         <span className='text-teal-500'><RoomIcon/></span>
@@ -14,9 +14,15 @@ const UserGuide = () => {
       </div>
 
       <div className='flex gap-[10px] '>
-        <span className='text-orange-500'><RoomIcon/></span>
-        <span className='font-bold'>All Pins by a User</span>
+        <span className='text-violet-500'><RoomIcon/></span>
+        <span className='font-bold'>Pins by Other Users</span>
       </div>
+
+      <div className='flex gap-[10px] '>
+        <span className='text-orange-500'><RoomIcon/></span>
+        <span className='font-bold'>Pins by Selected User</span>
+      </div>
+
       
     </div>
   )
