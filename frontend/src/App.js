@@ -57,7 +57,7 @@ function App() {
   useEffect(()=>{ 
     const getPins = async()=>{
       try {
-        const res = await axios.get("https://prod-mapapp.onrender.com/api/pins");
+        const res = await axios.get("https://prod-mapapp-1.onrender.com/api/pins");
         setPins(res.data);               
       } catch (error) {
         console.log(error)                    
@@ -94,7 +94,7 @@ function App() {
 
   const handleDeletePin = async(id) =>{
     try{
-      const res = await axios.delete(`https://prod-mapapp.onrender.com/api/pins/${id}`)
+      const res = await axios.delete(`https://prod-mapapp-1.onrender.com/api/pins/${id}`)
       console.log(res) 
     }
     catch(err){
@@ -114,7 +114,7 @@ function App() {
       longitude:mapClick.longitude
     }
     try{
-      const res = await axios.post('https://prod-mapapp.onrender.com/api/pins',newPin) 
+      const res = await axios.post('https://prod-mapapp-1.onrender.com/api/pins',newPin) 
       console.log(res)
       setPins([...pins,res.data])
       setMapClick(null)

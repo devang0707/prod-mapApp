@@ -27,7 +27,7 @@ const Register = ({setShouldShowRegister,myStorage,setCurrentUser}) => {
     }
 
     try{
-      const res = await axios.post('https://prod-mapapp.onrender.com/api/users/register',newUser)  
+      const res = await axios.post('https://prod-mapapp-1.onrender.com/api/users/register',newUser)  
       console.log(res)
       setError(false)
       setSuccess(true)

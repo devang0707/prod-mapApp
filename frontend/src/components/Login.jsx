@@ -23,7 +23,7 @@ const Login = ({setShouldShowLogin,myStorage,setCurrentUser,setShouldShowRegiste
     }
 
     try{
-      const res = await axios.post('https://prod-mapapp.onrender.com/api/users/login',user)
+      const res = await axios.post('https://prod-mapapp-1.onrender.com/api/users/login',user)
       console.log(res)
       myStorage.setItem('user',res.data.username)                     
       setCurrentUser(res.data.username)
